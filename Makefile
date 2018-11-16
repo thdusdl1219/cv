@@ -19,7 +19,7 @@ upload:
 	scp $(MAIN).pdf slee3036@killerbee1.cc.gatech.edu:~/www/
 
 clean:
-	rm -f *.out *.log *.aux *.pdf *.bbl *.blg
+	rm -f *.out *.log *.aux *.pdf *.bbl *.blg *.*~
 
 .PHONY: clean FORCE
 
