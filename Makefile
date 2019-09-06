@@ -8,7 +8,7 @@ $(MAIN).pdf: rev.tex
 	bibtex journal.aux
 	bibtex patent.aux
 	pdflatex $(MAIN).tex
-	pdflatex $(MAIN).tex
+	pdflatex --synctex=1 $(MAIN).tex
 
 rev.tex: FORCE
 	@printf '\\gdef\\therev{%s}\n\\gdef\\thedate{%s}\n' \
