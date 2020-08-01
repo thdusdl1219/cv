@@ -16,7 +16,7 @@ rev.tex: FORCE
 	   "$(shell git log -1 --format='%ci' HEAD)" > $@
 
 upload:
-	scp $(MAIN).pdf slee3036@killerbee1.cc.gatech.edu:~/www/
+	scp $(MAIN).pdf soyeon@allspark.gtisc.gatech.edu:~/www/assets
 
 clean:
 	rm -f *.out *.log *.aux *.pdf *.bbl *.blg *.*~
